@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: url(image.png);
+
+}
+
+.bg-image{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 160%;
+}
+
+.contain{
+    padding: 100px;
+}
+
+p{
+    color: orangered;
+}
+
+@media (max-width:500px) {
+    .contain{
+        padding: 10px;
+    }
+}
