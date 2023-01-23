@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(183, 231, 231);
+    color: rgb(111, 119, 119);
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    height: 30rem;
+    margin-bottom: 2rem ;    
+}
+
+.selection{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 40px;
+    padding: 5rem 0 ;
+}
+
+.tab{
+    background: rgb(255, 255, 255);
+    border-width: 0.5rem;
+    grid-template-columns: auto 1fr;
+}
+
+.button{
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    background-color: rgb(255, 154, 154);
+    cursor: pointer;
+    transition: all .3s linear;
+    letter-spacing: .25rem  ;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.button:nth-child(1){
+    border-top-left-radius: 0.5rem;
+}
+
+.button:nth-child(3){
+    border-top-right-radius: 0.5rem;
+}
+
+.button:hover:not(.live){
+    background: rgba(248, 51, 84, 0.63);
+    color: white;
+}
+
+.content{
+    padding:  2rem 1.5rem;
+
+}
+
+@media (min-width:992px){
+    .img{
+        margin-bottom: 0 ;
+    }
+
+    .selection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.text{
+    display: none;
+}
+
+.text.live{
+    display: block;
+}
+
+.button.live{
+    background-color:rgb(255, 255, 255) ;
+}
