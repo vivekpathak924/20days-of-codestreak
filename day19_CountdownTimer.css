@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    background-color: rgba(147, 189, 189, 0.514);
+}
+
+div{
+    background-color: aliceblue;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    margin: 0;
+    word-spacing: 10px;
+}
